@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ym-3j-9EU">
+                                <rect key="frame" x="80" y="344" width="98.5" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="animation" image="checkmark.square" catalog="system"/>
+                                <state key="selected" title="animation" image="checkmark.square.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="animationFlagButtonAtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGX-so-hFL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345.00" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OGy-fr-M1M">
+                                <rect key="frame" x="80" y="436" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Gpc-rU-sEK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cC-yg-sId">
+                                <rect key="frame" x="250" y="436" width="60" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="art-Kg-lhq"/>
+                                    <constraint firstAttribute="width" constant="60" id="pxD-Bf-hvm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Run">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeNumberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="28N-wS-fgQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLE-Mm-d22">
+                                <rect key="frame" x="10" y="442.5" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPO-VO-lCQ">
+                                <rect key="frame" x="80" y="387" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="VXk-aP-fkt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQv-hz-bHL">
+                                <rect key="frame" x="10" y="393.5" width="65.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OGy-fr-M1M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="2Ub-hn-hQ6"/>
+                            <constraint firstItem="OGy-fr-M1M" firstAttribute="top" secondItem="1Ym-3j-9EU" secondAttribute="bottom" constant="70" id="Esr-rn-j5l"/>
+                            <constraint firstItem="BQv-hz-bHL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="G2x-hf-kWj"/>
+                            <constraint firstItem="7cC-yg-sId" firstAttribute="leading" secondItem="OGy-fr-M1M" secondAttribute="trailing" constant="20" id="ID5-le-Mnp"/>
+                            <constraint firstItem="oLE-Mm-d22" firstAttribute="centerY" secondItem="OGy-fr-M1M" secondAttribute="centerY" id="JxM-87-FcM"/>
+                            <constraint firstItem="nPO-VO-lCQ" firstAttribute="leading" secondItem="OGy-fr-M1M" secondAttribute="leading" id="Ljz-0o-WVH"/>
+                            <constraint firstItem="OGy-fr-M1M" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="PiL-4r-Mla"/>
+                            <constraint firstItem="oLE-Mm-d22" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="WU6-m5-v3e"/>
+                            <constraint firstItem="BQv-hz-bHL" firstAttribute="centerY" secondItem="nPO-VO-lCQ" secondAttribute="centerY" id="dHX-Dh-HJf"/>
+                            <constraint firstItem="1Ym-3j-9EU" firstAttribute="leading" secondItem="OGy-fr-M1M" secondAttribute="leading" id="m6v-T7-2Ml"/>
+                            <constraint firstItem="OGy-fr-M1M" firstAttribute="top" secondItem="nPO-VO-lCQ" secondAttribute="bottom" constant="15" id="nlx-mO-mQJ"/>
+                            <constraint firstItem="7cC-yg-sId" firstAttribute="centerY" secondItem="OGy-fr-M1M" secondAttribute="centerY" id="s4r-Fc-GBO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationFlagButton" destination="1Ym-3j-9EU" id="jhQ-1B-Wb2"/>
+                        <outlet property="durationTextField" destination="nPO-VO-lCQ" id="K1A-9R-hjD"/>
+                        <outlet property="numberTextField" destination="OGy-fr-M1M" id="fWH-6f-n9Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="64" height="56"/>
+        <image name="checkmark.square.fill" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
